@@ -1,6 +1,7 @@
 import json
 import csv
 import matplotlib.pyplot as plt
+from fontTools.ttLib.tables.S__i_l_f import attrs_attributes
 from matplotlib.patches import Rectangle
 from matplotlib.colors import LinearSegmentedColormap, LogNorm, PowerNorm
 import numpy as np
@@ -124,3 +125,4 @@ for label, pct in row_percent.items():
 print("\nColumn distribution (% of total):")
 for name, pct in col_percent.items():
     print(f" {name}: {pct:.1f}%")
+
